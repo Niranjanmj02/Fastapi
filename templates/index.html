@@ -33,7 +33,7 @@
     <script>
         document.getElementById('fetch-data').addEventListener('click', async () => {
             try {
-                const response = await fetch('/api/data');
+                const response = await fetch('/data');
                 const data = await response.json();
                 document.getElementById('api-response').innerText = JSON.stringify(data);
             } catch (error) {

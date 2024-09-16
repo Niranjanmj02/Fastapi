@@ -16,3 +16,8 @@ async def read_index():
         return f.read()
 
 
+@app.get("/api/data")
+async def get_data():   
+    return {"message": "Hello from fast!"}
+from app.routes import router
+app.include_router(router)
